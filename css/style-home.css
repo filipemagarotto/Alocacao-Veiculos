@@ -1,1 +1,8 @@
-
+header {
+    background-color: blueviolet;
+}
+.container-header {
+    max-width: 80rem;
+    margin:auto;
+    background-color: blueviolet !important;
+}
