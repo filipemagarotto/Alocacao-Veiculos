@@ -2,7 +2,19 @@ header {
     background-color: blueviolet;
 }
 .container-header {
-    max-width: 80rem;
-    margin:auto;
+    height: 90px;
+    width: 80rem !important;
+    margin:auto !important;
     background-color: blueviolet !important;
+}
+.filtroCars {
+    height: 200px;
+    width: 100%;
+    background-color:rgba(0,0,0,0.3);
+    z-index: 1;
+    position: fixed;
+}
+.carousel-inner img {
+    height:700px;
+    width:100%;
 }
