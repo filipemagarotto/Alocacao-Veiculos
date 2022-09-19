@@ -1,3 +1,6 @@
+body {
+    background-color:#fafbfc;
+}
 header {
     background-color: blueviolet;
 }
@@ -17,7 +20,7 @@ header {
     width: 100%;
     background-color:rgba(0,0,0,0.3);
     z-index: 1;
-    position: fixed;
+    position: absolute;
 }
 .filtroCars form {
     width: 80rem !important;
@@ -27,4 +30,11 @@ header {
 .carousel-inner img {
     height:700px;
     width:100%;
+}
+.container-carrosDestaques {
+    background-color:#fafbfc;
+    width: 80rem;
+    margin:auto;
+    background-color: white;
+    height: 500px;
 }
