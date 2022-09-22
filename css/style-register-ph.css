@@ -16,8 +16,8 @@ body {
 }
 
 .container {
-    width: 80%;
-    height: 80vh;
+    width: 95%;
+    height: 90vh;
     display: flex;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
 }
@@ -32,7 +32,7 @@ body {
 }
 
 .form-image img {
-    width: 31rem;
+    width: 25rem;
 }
 
 .form {
@@ -86,8 +86,8 @@ body {
     border-radius: 10px;
 }
 
-.input-group {
-    display: flex;
+#form-pessoa-fisica {
+    display: none;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 1rem 0;

@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pessoa Física Cadastro</title>
     <link rel="stylesheet" href="css/style-register-ph.css">
+    <script src="js/script-register.js"></script>
+
 </head>
 
 <body>
@@ -15,16 +17,23 @@
             <img src="img/undraw_by_my_car_re_j3jt.svg">
         </div>
         <div class=" form">
-            <form action="#">
+            <form method="POST" action="">
                 <div class="form-header">
                     <div class="title">
-                        <h1>Cadastre-se</h1>
+                        <h1>Cadastrar&nbsp;
+                            <span id="titulo-pessoa-fisica" style="display: none;">pessoa física</span>
+                            <span id="titulo-pessoa-juridica" style="display: none;">pessoa jurídica</span>
+                        </h1>
                     </div>
+                    
+                    <input type="radio" name="tipo_pessoa" id="tipo_pessoa" value="1" onchange="formPessoaFisica();">Pessoa Física
+                    <input type="radio" name="tipo_pessoa" id="tipo_pessoa" value="2" onchange="formPessoaJuridica();">Pessoa Jurídica<br><br>
+
                     <div class="login-button">
                         <button> <a href="#">Entrar</a></button>
 
                     </div>
-                    <div class="input-group">
+                    <div id="form-pessoa-fisica">
 
                         <div class="input-box">
                             <label for="cpf">* CPF</label>
