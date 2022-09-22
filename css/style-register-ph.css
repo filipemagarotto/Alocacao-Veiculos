@@ -6,6 +6,36 @@
     font-family: 'Inter', sans-serif;
 }
 
+.title{
+    position: absolute;
+    top: 50px;
+    left: 61em;
+    
+}
+
+.teste3{
+    margin-left: 10px;
+}
+
+
+.teste2{
+    bottom: -100rem;
+    padding: 0px 28px 0px 5px;
+}
+
+.input1{
+    margin-right: 2px;
+    
+}
+
+#titulo-pessoa-fisica{
+    display: none;
+}
+
+#titulo-pessoa-juridica{
+    display: none;
+}
+
 body {
     width: 100%;
     height: 100vh;
@@ -34,6 +64,13 @@ body {
 .form-image img {
     width: 25rem;
 }
+
+.teste1{
+    width: 50%;
+    display: flex;
+   align-items: center;
+    flex-direction: column;
+}   
 
 .form {
     width: 50%;
