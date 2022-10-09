@@ -11,17 +11,13 @@ a:hover { color: inherit; }
 
 .container-header {
     height: 90px;
-    width: 110rem !important;
+    width: 80rem !important;
     margin:auto !important;
     background-color: blueviolet !important;
 }
-.container-body {
 
-    width: 110rem !important;
-    margin:auto;
-}
-.container-carrosDestaques {
-    width: 110rem;
+.container-filtros {
+    width: 100rem;
     margin:auto;
 }
 .list-cars {
