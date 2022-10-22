@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    
+    <link rel="stylesheet" type="text/css" href="../img/fontawesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/style-profile.css" media="screen" />
+    <title>Home Page</title>
+</head>
+<body>
+    
+    <header>  <!-- ------ CABEÇALHO ------ -->
+        <div class="navbar container-header">
+            <a class="navbar-brand text-light" href="../">INTERCAR</a>
+            <form class="form-inline">
+                <a href="../anuncie/index.html" class="btn btn-default active" role="button" aria-pressed="true" style="background-color: white;"><i class="fa-solid fa-file-contract"></i>&nbsp;Anuncie Aqui o seu Veículo</a>
+                <a href="../minhasReservas/index.html" class="btn btn-default active" role="button" aria-pressed="true" style="background-color: white;"><i class="fa-solid fa-car"></i>&nbsp;Minhas Reservas</a>
+                <a href="../profile/index.html" class="btn btn-default active" role="button" aria-pressed="true" style="background-color: white;"><i class="fa-solid fa-user"></i>&nbsp;Filipe Magarotto</a>
+            </form>
+        </div>
+    </header>
+    <div class="container rounded bg-white mt-5 mb-5">
+        <div class="row">
+            <div class="col-md-3 border-right">
+                <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5" width="150px" src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg"><span class="font-weight-bold">Filipe Magarotto</span><span class="text-black-50">filipemagarotto1213@uni9.edu.br</span><span> </span></div>
+            </div>
+            <div class="col-md-5 border-right">
+                <div class="p-3 py-5" id="leitura">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h4 class="text-right">Pessoa Física</h4>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-12">
+                            <label class="labels">Nome completo</label><br>
+                            <div style="border-bottom: 1px solid rgb(221, 221, 221);">
+                                Filipe Magarotto
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-12">
+                            <label class="labels">Número para contato</label>
+                            <div style="border-bottom: 1px solid rgb(221, 221, 221);">
+                                (11) 99917-6700
+                            </div>
+                        </div>
+                        <div class="col-md-12"><label class="labels">CPF</label><div style="border-bottom: 1px solid rgb(221, 221, 221);">
+                            123.456.789-10
+                        </div></div>
+                        <div class="col-md-12"><label class="labels">Email</label><div style="border-bottom: 1px solid rgb(221, 221, 221);">
+                            filpemagarotto1213@gmail.com
+                        </div></div>
+                        <div class="col-md-12"><label class="labels">Senha</label><div style="border-bottom: 1px solid rgb(221, 221, 221);">
+                            *********
+                        </div></div>
+                        <div class="col-md-12"><label class="labels">CEP</label><div style="border-bottom: 1px solid rgb(221, 221, 221);">
+                            12345678
+                        </div></div>
+                        <div class="col-md-12"><label class="labels">Data Nascimento</label><div style="border-bottom: 1px solid rgb(221, 221, 221);">
+                            15/10/2001
+                        </div></div>
+                        <div class="col-md-12"><label class="labels">Logradouro</label><div style="border-bottom: 1px solid rgb(221, 221, 221);">
+                            Rua 1
+                        </div></div>
+                        <div class="col-md-12"><label class="labels">Complemento</label><div style="border-bottom: 1px solid rgb(221, 221, 221);">
+                            Jardim Paulista
+                        </div></div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-6"><label class="labels">Estado</label><div style="border-bottom: 1px solid rgb(221, 221, 221);">
+                            São Paulo
+                        </div></div>
+                        <div class="col-md-6"><label class="labels">Cidade</label><div style="border-bottom: 1px solid rgb(221, 221, 221);">
+                            Jundiaí
+                        </div></div>
+                    </div>
+                    <div class="row mt-3 d-flex justify-content-center">
+                        <div class="col-md-3"><div class="mt-5 text-center"><button class="btn btn-primary profile-button" id="button-edit" type="button" onclick="edit();"><i class="fa-solid fa-pen-to-square">&nbsp;&nbsp;</i>Editar</button></div></div>
+                    </div>
+                </div>
+
+                <div class="p-3 py-5" id="editar" style="display: none;">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h4 class="text-right">Pessoa Física</h4>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-12">
+                            <label class="labels">Nome completo</label><br>
+                            <input type="text" class="form-control" placeholder="Filipe Magarotto" value="">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-12">
+                            <label class="labels">Número para contato</label>
+                            <input type="text" class="form-control" placeholder="(11) 99917-6700" value="">
+                        </div>
+                        <div class="col-md-12"><label class="labels">CPF</label><input type="text" class="form-control" placeholder="123.456.789-10" value=""></div>
+                        <div class="col-md-12"><label class="labels">Email</label><input type="text" class="form-control" placeholder="filpemagarotto1213@gmail.com" value=""></div>
+                        <div class="col-md-12"><label class="labels">Senha</label><input type="text" class="form-control" placeholder="*********" value=""></div>
+                        <div class="col-md-12"><label class="labels">CEP</label><input type="text" class="form-control" placeholder="12345678" value=""></div>
+                        <div class="col-md-12"><label class="labels">Data Nascimento</label><input type="date" class="form-control" placeholder="15/10/2001" value="15/10/2001"></div>
+                        <div class="col-md-12"><label class="labels">Logradouro</label><input type="text" class="form-control" placeholder="Rua 1" value=""></div>
+                        <div class="col-md-12"><label class="labels">Complemento</label><input type="text" class="form-control" placeholder="Jardim Paulista" value=""></div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-6"><label class="labels">Estado</label><input type="text" class="form-control" placeholder="São Paulo" value=""></div>
+                        <div class="col-md-6"><label class="labels">Cidade</label><input type="text" class="form-control" placeholder="Jundiai" value=""></div>
+                    </div>
+                    <div class="row mt-3 d-flex justify-content-center">
+                        <div class="col-md-3"><div class="mt-5 text-center"><button class="btn btn-primary profile-button" id="button-save" type="button" onclick="save();"><i class="fa-solid fa-floppy-disk"></i>&nbsp;&nbsp;Salvar</button></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="p-3 py-5">
+                    <div class="row mt-3">
+                        <div class="col">
+                            <div class="d-flex justify-content-between align-items-center experience"><span></span><span class="border px-3 p-1 add-experience profile-button"><i class="fa fa-plus"></i>&nbsp;Adicionar Veículo</span></div><br>
+                        </div>
+
+                        <div class="col">
+                            <div class="d-flex justify-content-between align-items-center experience"><span></span><span class="border px-3 p-1 add-experience profile-button">&nbsp;Meus veículos</span></div><br> 
+                        </div>
+                    </div>
+                    
+                    <!-- <div class="col-md-12"><label class="labels">Experience in Designing</label><input type="text" class="form-control" placeholder="experience" value=""></div> <br>
+                    <div class="col-md-12"><label class="labels">Additional Details</label><input type="text" class="form-control" placeholder="additional details" value=""></div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <script src="../js/script-profile.js"></script>
+</body>
+</html>
