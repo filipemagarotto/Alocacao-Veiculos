@@ -3,10 +3,17 @@ package com.intercar.models;
 import java.math.BigDecimal;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
+import lombok.Data;
+
+@Table(name = "CAR")
+@Data
+@Entity
 public class Car {
 
 	@Id
@@ -46,7 +53,7 @@ public class Car {
 	private String car_brand;
 	
 	@Column
-	private String km;
+	private BigDecimal km;
 	
 	@Column
 	private String gear;
