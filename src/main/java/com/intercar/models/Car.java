@@ -1,7 +1,21 @@
 package com.intercar.models;
 import java.util.Calendar;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
+
+@Entity
+@Table(name= "car")
 public class Car {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private Long id_userprovider_client;
 	private Long id_userprovider_company;
@@ -20,6 +34,19 @@ public class Car {
 	private String gear;
 	private Boolean air_conditioning;
 	private String motor;
+	
+	
+	@ManyToOne
+	@JoinColumn(name = "id_userprovider_company")
+	private UserProvider userProvider_company;
+	
+	@ManyToOne
+	@JoinColumn(name = "id_userprovider_client")
+	private UserProvider userProvider_client;
+	
+	@OneToOne
+	@JoinColumn(name = "id_userclient")
+	private UserClient userClient;
 	
 	public Car() {
 		
@@ -168,6 +195,30 @@ public class Car {
 	public void setMotor(String motor) {
 		this.motor = motor;
 	}
+
+	public UserProvider getUserProvider_company() {
+		return userProvider_company;
+	}
+
+	public void setUserProvider_company(UserProvider userProvider_company) {
+		this.userProvider_company = userProvider_company;
+	}
+
+	public UserProvider getUserProvider_client() {
+		return userProvider_client;
+	}
+
+	public void setUserProvider_client(UserProvider userProvider_client) {
+		this.userProvider_client = userProvider_client;
+	}
+
+	public UserClient getUserClient() {
+		return userClient;
+	}
+
+	public void setUserClient(UserClient userClient) {
+		this.userClient = userClient;
+	}
 	
-	
-}
+
+		}
