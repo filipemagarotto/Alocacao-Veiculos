@@ -37,13 +37,33 @@ a:hover { color: inherit; }
     
 }
 
-.btn-cancelar{
-    margin-left: 10px;
-}
-
-footer{
-    position: fixed;
-    bottom: 0px;
-    width: 100%;
+footer {
     background-color: blueviolet;
 }
+
+.btn-cancelar{
+    margin-right: 10px;
+}
+
+.formulario {
+    border: 1px solid blueviolet;
+    padding: 10px;
+    border-radius: 5px;
+    background-position: 0 0, 0 100% ;
+    background-repeat: no-repeat;
+    background-size: 100% 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.corPadraoTxt{
+    color: blueviolet;
+}
+
+.lines{
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+

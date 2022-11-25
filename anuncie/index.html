@@ -14,7 +14,7 @@
 <body>
     <header>  <!-- ------ CABEÇALHO ------ -->
         <div class="navbar container-header">
-            <a class="navbar-brand text-light" href="../">INTERCAR</a>
+            <a class="navbar-brand text-light" href="../"><img src="../img/logo.png" style="margin-top: 10px;"></a>
             <form class="form-inline">
                 <a href="../anuncie/index.html" class="btn btn-default active" role="button" aria-pressed="true" style="background-color: white;"><i class="fa-solid fa-file-contract"></i>&nbsp;Anuncie Aqui o seu Veículo</a>
                 <a href="../minhasReservas/index.html" class="btn btn-default active" role="button" aria-pressed="true" style="background-color: white;"><i class="fa-solid fa-car"></i>&nbsp;Minhas Reservas</a>
@@ -23,53 +23,58 @@
         </div>
     </header>
 
-    
-	<!-- year_car -> Ano do Carro
-	rental_value -> Valor do Aluguel
-	motor -> Motor
-	license_plate -> Placa de Carro
-	km -> Km Rodado
-	id_userprovides_company -> Empresa Jurídica Ofertador
-	id_userprovider_client -> Pessoa Física Ofertadora
-	id_userclient -> Cliente Comprador
-	gear -> Automático ou Manual
-	car_model -> Modelo do carro
-	car_color -> Cor do carro
-	car_brand -> Marca do Carro
-	air_conditioning -> SIM ou NAO para ar-condicionado -->
-	
 
     <div class="container-body" style="width: 40%;margin:auto;margin-top:35px;">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h4 class="text-right">Anunciar veículo</h4>
+        </div>
         <form>
+
+            <div class="form-outline mb-4">
+                <label class="form-label" for="form6Example7">Modelo do veículo</label>
+                <input class="form-control" id="form6Example7" rows="4"></input>
+            </div>
+        
             <div class="row mb-4">
                 <div class="col">
                     <div class="form-outline">
-                        <label class="form-label" for="form6Example1">Ano do Carro</label>
+                        <label class="form-label" for="form6Example1">Marca do veículo</label>
                         <input type="text" id="form6Example1" class="form-control" />
                     </div>
                 </div>
                 <div class="col">
                     <div class="form-outline">
-                        <label class="form-label" for="form6Example2">Placa de Carro</label>
+                        <label class="form-label" for="form6Example2">Cor do veículo</label>
                         <input type="text" id="form6Example2" class="form-control" />
                     </div>
                 </div>
             </div>
-          
+            <div class="row mb-4">
+                <div class="col">
+                    <div class="form-outline">
+                        <label class="form-label" for="form6Example1">Ano do veículo</label>
+                        <input type="text" id="form6Example1" class="form-control" />
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-outline">
+                        <label class="form-label" for="form6Example2">Placa de veículo</label>
+                        <input type="text" id="form6Example2" class="form-control" />
+                    </div>
+                </div>
+            </div>
+        
             <div class="form-outline mb-4">
                 <label class="form-label" for="form6Example3">Motor</label>
                 <input type="text" id="form6Example3" class="form-control" /> 
             </div>
 
-            <div class="form-outline mb-4">
-                <label class="form-label" for="form6Example4">Valor do Aluguel</label>
-                <input type="number" id="form6Example4" class="form-control" />
-            </div>
+            
 
             <div class="form-outline mb-4">
                 <label class="form-label" for="form6Example5">Km Rodado</label>
-              <input type="number" id="form6Example5" class="form-control" />
-              
+            <input type="number" id="form6Example5" class="form-control" />
+            
             </div>
 
             <div class="form-outline mb-4">
@@ -79,25 +84,18 @@
                     <option value="1">Automático</option>
                 </select>
             </div>
-          
+
             <div class="form-outline mb-4">
-                <label class="form-label" for="form6Example7">Modelo do carro</label>
-                <input class="form-control" id="form6Example7" rows="4"></input>
+                <label class="form-label" for="form6Example5">Ar-condicionado</label>
+                <select class="form-select" aria-label="Câmbio">
+                    <option selected>Não Possui</option>
+                    <option >Possui</option>
+                </select>
             </div>
-          
-            <div class="row mb-4">
-                <div class="col">
-                    <div class="form-outline">
-                        <label class="form-label" for="form6Example1">Marca do Carro</label>
-                        <input type="text" id="form6Example1" class="form-control" />
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="form-outline">
-                        <label class="form-label" for="form6Example2">Cor do carro</label>
-                        <input type="text" id="form6Example2" class="form-control" />
-                    </div>
-                </div>
+        
+            <div class="form-outline mb-4">
+                <label class="form-label" for="form6Example4">Valor do Aluguel</label>
+                <input type="number" id="form6Example4" class="form-control" />
             </div>
 
             <div class="mb-3">
@@ -105,15 +103,11 @@
                 <input class="form-control" type="file" id="formFile">
             </div>
 
-            <div class="form-check d-flex justify-content-left mb-4">
-              <input class="form-check-input me-2" type="checkbox" value="" id="form6Example8" checked />
-              <label class="form-check-label" for="form6Example8"> Ar-condicionado </label>
+            <div class="d-flex justify-content-center mt-5">
+                <button type="submit" onclick="salvarVeiculo()" class="btn btn-primary btn-block mb-4"><i class="fa-solid fa-pen-to-square">&nbsp;&nbsp;</i>Anunciar</button>
+                <button type="submit" class="btn btn-danger btn-block mb-4 btn-cancelar">Cancelar</button>
             </div>
-
-            <div class="form-check d-flex justify-content-center mb-4">
-                <button type="submit" class="btn btn-primary btn-block mb-4">Cadastrar Veículo</button>
-            </div>
-          </form>
+        </form>
     </div>
 
     <footer class="text-center text-white">
