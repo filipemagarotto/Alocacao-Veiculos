@@ -18,7 +18,7 @@ Nome | RA
 `Eduardo Lopes Martins Filho`| 420103667
 `Engles Bruno Lopes Mesquita`| 320100068
 `Filipe Honório Magarotto dos Santos`|920107615
-`Laura Luiza da Silva Moura`|420107363
+`Laura Luiza da Silva Moura`|920107363
 `Ranna Oliveira Chinen`| 321102166
 `Ricardo Souza`| 919102779
 `Vinícius Ramos da Silva`| 420109625
